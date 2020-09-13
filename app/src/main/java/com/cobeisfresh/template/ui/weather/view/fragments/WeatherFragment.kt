@@ -1,5 +1,6 @@
 package com.cobeisfresh.template.ui.weather.view.fragments
 
+import androidx.lifecycle.Observer
 import com.cobeisfresh.template.R
 import com.cobeisfresh.template.common.convertKelvinToCelsius
 import com.cobeisfresh.template.common.extensions.hideKeyboard
@@ -32,6 +33,11 @@ class WeatherFragment : BaseFragment() {
   
   private fun subscribeToData() {
     viewModel.viewState.subscribe(this, ::handleViewState)
+    /* THE SAME THAT UP
+    viewModel.viewState.observe(this, Observer {
+      handleViewState(it)
+    })
+    */
   }
   
   private fun handleViewState(viewState: ViewState<WeatherInfo>) {

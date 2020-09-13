@@ -7,6 +7,7 @@ import com.example.data.di.databaseModule
 import com.example.data.di.networkingModule
 import com.example.data.di.repositoryModule
 import com.example.domain.di.interactionModule
+import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

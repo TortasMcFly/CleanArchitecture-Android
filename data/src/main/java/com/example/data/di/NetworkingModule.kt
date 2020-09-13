@@ -1,10 +1,10 @@
 package com.example.data.di
 
-import com.example.data.BuildConfig
 import com.example.data.networking.WeatherApi
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.androidx.scope.BuildConfig
 import org.koin.dsl.module
 import retrofit2.Converter
 import retrofit2.Retrofit
